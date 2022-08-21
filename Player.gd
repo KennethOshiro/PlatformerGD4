@@ -1,12 +1,12 @@
-extends KinematicBody2D
+extends CharacterBody2D
 
 const MOVE_SPEED = 500
 const JUMP_FORCE = 1000
 const GRAVITY = 50
 const MAX_FALL_SPEED = 1000
 
-onready var anim_player = $AnimationPlayer
-onready var sprite = $Sprite
+@onready var anim_player = $AnimationPlayer
+@onready var sprite = $Sprite
 
 var y_velo = 0
 var facing_right = false
@@ -18,7 +18,9 @@ func _physics_process(delta):
 	if Input.is_action_pressed("move_left"):
 		move_dir -= 1
 	
-	move_and_slide(Vector2(move_dir * MOVE_SPEED, y_velo), Vector2(0, -1))
+	move_and_slide()
+	set_velocity(Vector2(move_dir * MOVE_SPEED, y_velo))
+	#set_velocity(Vector2(0, -1))
 	
 	var grounded = is_on_floor()
 	y_velo += GRAVITY

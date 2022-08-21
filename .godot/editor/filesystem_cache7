@@ -1,0 +1,13 @@
+0b7126e0c6e86d3ec295a72f5aa6e0bd
+::res://::1661040636
+default_env.tres::Environment::-1::1661038768::0::1::::<><>::
+icon.png::CompressedTexture2D::4174445345876363180::1661038768::1661040638::1::::<><>::
+platformer_char_spritesheet.png::CompressedTexture2D::7762304195468555641::1661038768::1661040638::1::::<><>::
+platformer_thumb.png::CompressedTexture2D::8867735929545272::1661038768::1661040638::1::::<><>::
+platformer_tiles.png::CompressedTexture2D::2690968909650304886::1661038768::1661040638::1::::<><>::
+Player.gd::GDScript::-1::1661040602::0::1::::<><>::
+Player.tscn::PackedScene::-1::1661040602::0::1::::<><>::res://Player.gd<>res://platformer_char_spritesheet.png
+README.md::TextFile::-1::1661040602::0::1::::<><>::
+tiles.tres::TileSet::-1::1661040602::0::1::::<><>::res://platformer_tiles.png
+tiles.tscn::PackedScene::-1::1661040602::0::1::::<><>::res://platformer_tiles.png
+World.tscn::PackedScene::-1::1661040602::0::1::::<><>::res://tiles.tres<>res://Player.tscn
