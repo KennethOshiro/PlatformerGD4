@@ -1,10 +1,8 @@
-[gd_resource type="TileSet" load_steps=4 format=3 uid="uid://dtv3t8g6wb6fo"]
+[gd_resource type="TileSet" load_steps=3 format=3 uid="uid://csaxd4htvnbcv"]
 
-[ext_resource type="Texture2D" uid="uid://belr4nxtjuetq" path="res://platformer_tiles.png" id="1"]
+[ext_resource type="Texture2D" uid="uid://bwv13kky104o8" path="res://platformer_tiles.png" id="1"]
 
-[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_dgwk4"]
-
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tllgp"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_y5gs1"]
 texture = ExtResource("1")
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
@@ -137,5 +135,4 @@ texture = ExtResource("1")
 
 [resource]
 physics_layer_0/collision_layer = 1
-physics_layer_0/physics_material = SubResource("PhysicsMaterial_dgwk4")
-sources/0 = SubResource("TileSetAtlasSource_tllgp")
+sources/4 = SubResource("TileSetAtlasSource_y5gs1")

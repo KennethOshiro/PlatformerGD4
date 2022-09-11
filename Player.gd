@@ -19,8 +19,7 @@ func _physics_process(delta):
 		move_dir -= 1
 	
 	move_and_slide()
-	set_velocity(Vector2(move_dir * MOVE_SPEED, y_velo))
-	#set_velocity(Vector2(0, -1))
+	set_velocity(Vector2(move_dir * MOVE_SPEED, y_velo))#, Vector2(0, -1))
 	
 	var grounded = is_on_floor()
 	y_velo += GRAVITY

@@ -1,7 +1,7 @@
-[gd_scene load_steps=9 format=3 uid="uid://dc6v3hc2lo6bp"]
+[gd_scene load_steps=9 format=3 uid="uid://dc44ii4v7cski"]
 
 [ext_resource type="Script" path="res://Player.gd" id="1"]
-[ext_resource type="Texture2D" uid="uid://diueasrmeexdx" path="res://platformer_char_spritesheet.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://b7626o3qkbnek" path="res://platformer_char_spritesheet.png" id="2"]
 
 [sub_resource type="RectangleShape2D" id="1"]
 size = Vector2(20, 48)
@@ -54,7 +54,7 @@ tracks/0/keys = {
 "values": [Rect2(0, 0, 64, 64), Rect2(64, 0, 64, 64), Rect2(128, 0, 64, 64), Rect2(64, 0, 64, 64)]
 }
 
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_i17gm"]
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_bmaim"]
 _data = {
 "idle": SubResource("3"),
 "jump": SubResource("4"),
@@ -79,5 +79,5 @@ region_rect = Rect2(0, 64, 64, 64)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
-"": SubResource("AnimationLibrary_i17gm")
+"": SubResource("AnimationLibrary_bmaim")
 }
